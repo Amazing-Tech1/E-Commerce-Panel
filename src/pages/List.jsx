@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import axios from '../api/axios'
 import { toast } from 'react-toastify';
+import {Link} from 'react-router-dom'
 
 function List() {
   const [products, setProducts] = useState([])
@@ -65,10 +66,10 @@ function List() {
             <img className='w-12' src={product.image[0]} alt="" />
             <p>{product.name}</p>
             <p>{product.category}</p>
-            <p>${product.price}</p>
+            <p>NGN {product.price}</p>
             <div className='flex gap-2 text-lg text-right md:text-center'>
               <p className='cursor-pointer' onClick={() => removeProduct(product._id)}>✖</p>
-              <p className='cursor-pointer'>📝</p>
+              <Link to={`/update/${product._id}`}><p className='cursor-pointer'>📝</p></Link>
             </div>
           </div>
         ))}

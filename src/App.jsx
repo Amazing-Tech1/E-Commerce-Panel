@@ -4,6 +4,7 @@ import Sidebar from './components/Sidebar'
 import { Routes, Route } from 'react-router-dom'
 import Add from './pages/add'
 import List from './pages/list'
+import Update from './pages/Update'
 import Order from './pages/order'
 import Login from './pages/Login'
 import Unauthorized from './pages/Unauthorized'
@@ -85,6 +86,7 @@ function App() {
                 <Route element={<ProtectedRoute auth={auth} />}>
                   <Route path='/add' element={<Add />} />
                   <Route path='/list' element={<List />} />
+                  <Route path='/update/:id' element={<Update />} />
                   <Route path='/order' element={<Order auth={auth} />} />
                 </Route>
                 <Route path='*' element={<Missing />} />
