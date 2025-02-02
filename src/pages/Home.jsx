@@ -7,7 +7,7 @@ function Home() {
     <div className='h-screen overflow-hidden'>
       <div className=' flex items-center justify-between py-2 px-[4%] h-[10%]'>
         <div className='flex items-baseline'>
-          <img src={logo} alt="" className='w-[6%] sm' />
+          <img src={logo} alt="" className='w-[5%] sm' />
           <i className='text-blue-500 text-[20px] sm:text-[35px] md:text-[50px]'>MALL</i>
         </div>
 
