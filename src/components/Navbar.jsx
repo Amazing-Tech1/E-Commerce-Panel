@@ -29,7 +29,7 @@ function Navbar({ setAuth }) {
         <div className=' flex items-center justify-between py-3 px-[4%]'>
             <div className='flex items-baseline '>
                 <img src={logo} alt="" className='w-[6%] h-[100%] sm' />
-                <i className='text-blue-500 text-[25px]'>MALL</i>
+                <i className='text-blue-500 text-[20px] sm:text-[35px] md:text-[50px]'>MALL</i>
             </div>
 
             <div><button className="border rounded-full px-5 py-2 sm:px-7 text-white bg-blue-500" onClick={handleLogout}>Logout</button></div>
