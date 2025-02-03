@@ -28,7 +28,7 @@ function Navbar({ setAuth }) {
     return (
         <div className=' flex items-center justify-between py-3 px-[4%]'>
             <div className='flex items-baseline '>
-                <img src={logo} alt="" className='w-[6%] h-[100%]' />
+                <img src={logo} alt="" className=' w-[7%] sm:w-[6%] h-[100%]' />
                 <i className='text-blue-500 text-[25px] sm:text-[35px] md:text-[50px]'>MALL</i>
             </div>
 

@@ -34,7 +34,7 @@ function App() {
         withCredentials: true
       });
       if (response.data.success) {
-        toast.success(`Welcome ${email}`)
+        toast.success('Welcome Admin')
         setAuth(true)
         localStorage.setItem('auth', JSON.stringify(true))
         navigate('/list')
