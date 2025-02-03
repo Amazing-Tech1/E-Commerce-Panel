@@ -16,7 +16,7 @@ function List() {
         withCredentials: true
       })
       setProducts(response.data)
-      console.log(response.data)
+      // console.log(response.data)
 
     } catch (err) {
       console.log(err.response)
@@ -25,7 +25,6 @@ function List() {
 
   async function removeProduct(id) {
     try {
-      console.log(token)
       const response = await axios.delete("/products", {
         headers: {
           'Content-Type': 'application/json'
